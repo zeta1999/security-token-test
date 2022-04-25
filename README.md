@@ -24,4 +24,9 @@ Building Quorum network using 3 nodes based on Raft consensus.
 <br>
 
 ## Commands
-- Access to geth of nodes: `docker exec -it <container_name> geth attach ./qdata/dd/geth.ipc`
+- Start network: ./start.sh
+- Stop network: ./stop.sh
+- Access to geth of nodes: ./attach.sh ${NODE_ID} 
+   - Example: ./attach.sh 1 -> Attach to container "security-token-test_node1_1"
+- Get logs of container: ./log.sh ${NODE_ID}
+   - Example: ./log.sh 2 -> Get logs of container "security-token-test_node2_1"
