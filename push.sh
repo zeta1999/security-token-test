@@ -16,4 +16,4 @@ echo "2. commit"
 git commit --allow-empty -m $NOWDATE" : "$MESSAGE 
 
 echo "3. push"
-git push origin master
+git push origin main
